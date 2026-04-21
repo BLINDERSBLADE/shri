@@ -1,0 +1,241 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Soft Rose & Cream palette */
+  --background: oklch(0.97 0.012 60);
+  --foreground: oklch(0.3 0.04 20);
+  --card: oklch(0.99 0.008 60);
+  --card-foreground: oklch(0.3 0.04 20);
+  --popover: oklch(0.99 0.008 60);
+  --popover-foreground: oklch(0.3 0.04 20);
+  --primary: oklch(0.6 0.14 15);
+  --primary-foreground: oklch(0.98 0.01 60);
+  --secondary: oklch(0.94 0.02 20);
+  --secondary-foreground: oklch(0.3 0.04 20);
+  --muted: oklch(0.94 0.02 20);
+  --muted-foreground: oklch(0.5 0.04 20);
+  --accent: oklch(0.75 0.1 70);
+  --accent-foreground: oklch(0.3 0.04 20);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0.01 60);
+  --border: oklch(0.6 0.1 15 / 0.2);
+  --input: oklch(0.88 0.03 20);
+  --ring: oklch(0.65 0.14 15);
+
+  /* Brand tokens */
+  --rose: oklch(0.65 0.15 15);
+  --rose-soft: oklch(0.82 0.08 15);
+  --rose-deep: oklch(0.48 0.12 15);
+  --gold: oklch(0.72 0.12 75);
+  --gold-soft: oklch(0.82 0.08 75);
+  --cream: oklch(0.97 0.012 60);
+  --cream-warm: oklch(0.94 0.025 55);
+  --ink: oklch(0.3 0.04 20);
+
+  --radius: 0.625rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-display), 'Cormorant Garamond', ui-serif, Georgia, serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-rose: var(--rose);
+  --color-rose-soft: var(--rose-soft);
+  --color-rose-deep: var(--rose-deep);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-cream: var(--cream);
+  --color-cream-warm: var(--cream-warm);
+  --color-ink: var(--ink);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(ellipse at 20% 0%, oklch(0.88 0.06 15 / 0.55), transparent 55%),
+      radial-gradient(ellipse at 80% 100%, oklch(0.9 0.05 60 / 0.6), transparent 55%),
+      radial-gradient(ellipse at 50% 50%, oklch(0.95 0.03 30 / 0.35), transparent 70%),
+      linear-gradient(180deg, oklch(0.97 0.015 55) 0%, oklch(0.95 0.025 25) 50%, oklch(0.97 0.015 55) 100%);
+    background-attachment: fixed;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-rose {
+    color: var(--rose);
+  }
+  .text-rose-deep {
+    color: var(--rose-deep);
+  }
+  .bg-rose {
+    background-color: var(--rose);
+  }
+  .border-rose {
+    border-color: var(--rose);
+  }
+  .text-gold {
+    color: var(--gold);
+  }
+  .text-gradient-rose {
+    background: linear-gradient(135deg, oklch(0.68 0.16 15) 0%, oklch(0.78 0.12 25) 50%, oklch(0.68 0.16 15) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .shimmer {
+    background: linear-gradient(
+      110deg,
+      oklch(0.62 0.16 15) 0%,
+      oklch(0.78 0.12 25) 30%,
+      oklch(0.58 0.18 12) 50%,
+      oklch(0.78 0.12 25) 70%,
+      oklch(0.62 0.16 15) 100%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 6s linear infinite;
+  }
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.15; transform: scale(1); }
+    50% { opacity: 0.75; transform: scale(1.25); }
+  }
+  .twinkle { animation: twinkle 4s ease-in-out infinite; }
+  @keyframes drift {
+    0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+    10% { opacity: 0.6; }
+    90% { opacity: 0.5; }
+    100% { transform: translate(20px, 40px) rotate(160deg); opacity: 0; }
+  }
+  .drift { animation: drift 14s linear infinite; }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  .float { animation: float 6s ease-in-out infinite; }
+  @keyframes fade-up {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .fade-up { animation: fade-up 1s ease-out both; }
+
+  /* Falling flower petals */
+  @keyframes flower-fall {
+    0% {
+      transform: translateY(-10vh);
+    }
+    100% {
+      transform: translateY(110vh);
+    }
+  }
+  @keyframes flower-sway {
+    0% {
+      transform: translateX(-14px) rotate(var(--rotate-start, 0deg));
+    }
+    50% {
+      transform: translateX(14px) rotate(calc(var(--rotate-start, 0deg) + 180deg));
+    }
+    100% {
+      transform: translateX(-14px) rotate(calc(var(--rotate-start, 0deg) + 360deg));
+    }
+  }
+  .flower-fall {
+    animation-name: flower-fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    will-change: transform;
+  }
+  .flower-sway {
+    animation-name: flower-sway;
+    animation-duration: var(--sway-duration, 5s);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    will-change: transform;
+  }
+
+  /* Candle flame */
+  @keyframes flame-flicker {
+    0%, 100% {
+      transform: translateX(-50%) scale(1, 1);
+      opacity: 0.95;
+    }
+    25% {
+      transform: translateX(-50%) scale(0.92, 1.06);
+      opacity: 0.85;
+    }
+    50% {
+      transform: translateX(-50%) scale(1.05, 0.96);
+      opacity: 1;
+    }
+    75% {
+      transform: translateX(-50%) scale(0.95, 1.04);
+      opacity: 0.9;
+    }
+  }
+  .candle-flame {
+    animation: flame-flicker 0.6s ease-in-out infinite;
+    transform-origin: 50% 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .flower-fall,
+    .flower-sway,
+    .candle-flame,
+    .shimmer,
+    .twinkle,
+    .drift,
+    .float,
+    .fade-up {
+      animation: none !important;
+    }
+  }
+
+  .paper-grain {
+    background-image:
+      radial-gradient(oklch(0.65 0.12 15 / 0.04) 1px, transparent 1px),
+      radial-gradient(oklch(0.7 0.1 25 / 0.03) 1px, transparent 1px);
+    background-size: 22px 22px, 33px 33px;
+    background-position: 0 0, 11px 11px;
+  }
+}
