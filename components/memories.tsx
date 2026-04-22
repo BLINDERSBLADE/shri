@@ -21,6 +21,36 @@ const memories = [
     caption: "Every petal, every page",
     note: "A small garden of everything we&rsquo;ve already collected together.",
   },
+  {
+    src: "/memories/memory-5.jpg",
+    caption: "Rain on glass",
+    note: "Watching the world blur while you stay crystal clear.",
+  },
+  {
+    src: "/memories/memory-6.jpg",
+    caption: "Stories in paper",
+    note: "Between the pages, our names are written in every margin.",
+  },
+  {
+    src: "/memories/memory-7.jpg",
+    caption: "Words unsaid",
+    note: "The letters I wrote but never quite sent, yet you understood.",
+  },
+  {
+    src: "/memories/memory-8.jpg",
+    caption: "Traces of you",
+    note: "Small details that remind me you&rsquo;re always there.",
+  },
+  {
+    src: "/memories/memory-9.jpg",
+    caption: "Golden mornings",
+    note: "When time slows down and everything feels like forever.",
+  },
+  {
+    src: "/memories/memory-10.jpg",
+    caption: "Fragmented light",
+    note: "Every reflection holds a piece of something beautiful we created.",
+  },
 ]
 
 export function Memories() {
@@ -40,7 +70,7 @@ export function Memories() {
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
           {memories.map((m, i) => (
             <figure
               key={m.src}
