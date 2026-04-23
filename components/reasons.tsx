@@ -1,35 +1,35 @@
 const reasons = [
   {
     title: "Your smile",
-    body: "The one that arrives a second before you mean it to. It opens rooms, softens bad days, and has personally been responsible for a large percentage of my happiness.",
+    body: "The kind of smile that make others feel as though they are dreaming, a beauty truly out of this world.",
   },
   {
-    title: "The way you dance",
-    body: "When a good song plays and your shoulders decide before you do. Kitchen floors, car seats, doorways &mdash; you turn every inch of space into a small, private celebration.",
+    title: "Those Eyes",
+    body: "The way they look at me, the beauty the posses, I lost myself in them everytime I see them, whether it be the first day I saw you or now.",
   },
   {
-    title: "Your voice when you sing",
-    body: "Quiet, un-self-conscious, usually half-humming. I would choose your voice over any playlist, any song, any silence.",
+    title: "Those curls",
+    body: "The craziest, preetiest things just like you, I can spend my life being tangled in them.",
   },
   {
-    title: "Your books",
-    body: "The way you disappear into them. The way you emerge, a little changed, with something thoughtful to say. I love the world more, knowing you&rsquo;re reading it so carefully.",
+    title: "Bold in act, Shy in Heart",
+    body: "A quite contradiction I adore, you walkin with fearless charm yet somewhere between that glance and smile, that softness slips through, making it the part I adore about you the most",
   },
   {
-    title: "The artist in you",
-    body: "The tiny sketches, the colour you notice in everything, the way you turn ordinary moments into something worth framing. You see beauty first &mdash; and then you make more of it.",
+    title: "My cute baby",
+    body: "You act all tough for the world but becomes the cutest with me. That side is my favourite place.",
   },
   {
-    title: "Everything you cook",
-    body: "The stirring, the tasting, the humming while you work. Food made by you tastes like being taken care of &mdash; and I will never stop being grateful at your table.",
+    title: "Your spirit",
+    body: "The way you hold your ground in every situation of life — fearless, focused, and completely unstoppable.",
   },
   {
-    title: "Your softness",
-    body: "The side of you most people never get to see. The fact that I do is something I will never take lightly &mdash; not for a single day.",
+    title: "My short baddie",
+    body: "Small in height but somehow take up my whole heart. Cute enough to make me smile for no reason, dangerous enough to keep me obsessed You are my — prettiest little chaos, the sweetest trouble and the one I'd choose every single time.",
   },
   {
-    title: "You, just as you are",
-    body: "No edits. No conditions. The whole of you, exactly as the universe wrote you &mdash; that is the part I love the most.",
+    title: "My Manaivi",
+    body: "Yes not officially yet I know — But the only one to hold that tittle in my life.",
   },
 ]
 
