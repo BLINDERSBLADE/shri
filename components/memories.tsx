@@ -3,7 +3,7 @@ import Image from "next/image"
 const memories = [
   {
     src: "/memories/memory-1.jpg",
-    caption: "The little moments",
+    caption: "Finding magic in the ordinary",
     note: "The quiet kind that become the loudest ones in memory.",
   },
   {
