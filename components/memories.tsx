@@ -18,7 +18,7 @@ const memories = [
   },
   {
     src: "/memories/memory-4.jpg",
-    caption: "Effortlessly stunning, dangerously stunning ",
+    caption: "Effortlessly stunning, dangerously distracting ",
     note: "A kind of beauty that lingers in your thoughts, the grace you can not ignore.",
   },
 ]
