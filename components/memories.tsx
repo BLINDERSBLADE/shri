@@ -3,23 +3,23 @@ import Image from "next/image"
 const memories = [
   {
     src: "/memories/memory-1.jpg",
-    caption: "Finding magic in the ordinary",
-    note: "The quiet kind that become the loudest ones in memory.",
+    caption: "A quiet kind of beauty that stays with you",
+    note: "Being in your pressence is more than I can ask to universe, as it has bestowed me with you in my life.",
   },
   {
     src: "/memories/memory-2.jpg",
-    caption: "Warm afternoons",
-    note: "Tea steeping, pages turning, you humming without realizing.",
+    caption: "That smile, the kind you don't recover from",
+    note: "Your smile is like a home I had no idea I wass missing.",
   },
   {
     src: "/memories/memory-3.jpg",
-    caption: "Our song",
-    note: "The one that plays in my head even when nothing is playing.",
+    caption: "The magic in your pressence",
+    note: "Every day, every minute, every second I spent with you, would be the last 7 min of me.",
   },
   {
     src: "/memories/memory-4.jpg",
-    caption: "Every petal, every page",
-    note: "A small garden of everything we&rsquo;ve already collected together.",
+    caption: "Effortlessly stunning, dangerously stunning ",
+    note: "A kind of beauty that lingers in your thoughts, the grace you can not ignore.",
   },
 ]
 
