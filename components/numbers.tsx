@@ -10,7 +10,7 @@ type Stat = {
 }
 
 const stats: Stat[] = [
-  { value: "421", label: "The days you have been mins", animate: 421 },
+  { value: "421", label: "The days you have been mine", animate: 421 },
   { value: "∞", label: "How much I love you", isInfinity: true },
   { value: "1000+", label: "Screenshot I have of you being cute" },
   { value: "∞", label: "Number of times I'd still choose you", isInfinity: true },
