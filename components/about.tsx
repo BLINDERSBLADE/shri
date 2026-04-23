@@ -21,26 +21,26 @@ export function About() {
 
         <div className="flex flex-col gap-6 md:col-span-3">
           <p className="font-serif text-2xl font-light leading-relaxed text-ink text-pretty md:text-3xl">
-            Sri is the kind of person the room quietly rearranges itself around.
+            You are the kind of person the room quietly rearranges itself around.
             Calm where it matters, brave when it counts, and warm in a way that
             makes strangers feel remembered.
           </p>
           <p className="font-sans text-base leading-relaxed text-ink/75 md:text-lg">
-            She carries a softness that never asks for attention &mdash; and yet,
-            attention finds her anyway. There is something in the way she listens,
-            the way she hums under her breath, the way she can read a novel in
+            You carries a softness that never asks for attention &mdash; and yet,
+            attention finds you anyway. There is something in the way you listens,
+            the way you hums under your breath, the way you can read a novel in
             an afternoon and still notice the sunlight moving across the floor.
           </p>
           <p className="font-sans text-base leading-relaxed text-ink/75 md:text-lg">
-            She sings a little while she cooks. She dances, without deciding to,
-            the second a good song plays. She sees beauty the rest of us miss,
-            and she makes ordinary afternoons feel like small, private holidays.
-            She is, quite simply, my favourite thing about being alive.
+            you sings while you cooks. you dances, without deciding to,
+            the second a good song plays. You sees beauty the rest of us miss,
+            and you makes ordinary afternoons feel like small, private holidays.
+            You are, quite simply, my favourite thing about being alive.
           </p>
 
           <blockquote className="mt-4 border-l-2 border-rose/60 pl-6 font-serif text-xl italic text-rose-deep md:text-2xl">
-            &ldquo;Of all the skies, she is the one I would have chosen &mdash;
-            even if no one told me she was mine.&rdquo;
+            &ldquo;Of all the skies, you are the one I would have chosen &mdash;
+            even if no one told me you were mine.&rdquo;
           </blockquote>
         </div>
       </div>

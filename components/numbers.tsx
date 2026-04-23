@@ -10,11 +10,11 @@ type Stat = {
 }
 
 const stats: Stat[] = [
-  { value: "∞", label: "Times I'd choose you again", isInfinity: true },
-  { value: "0", label: "Songs that sound better than you humming", animate: 0 },
-  { value: "1", label: "Sky, and it belongs to you" },
-  { value: "100%", label: "Of my heart, yours", animate: 100 },
-  { value: "∞", label: "Pages still to read beside you", isInfinity: true },
+  { value: "421", label: "The days you have been mine", animate: 421 },
+  { value: "∞", label: "How much I love you", isInfinity: true },
+  { value: "1000+", label: "Screenshot I have of you being cute" },
+  { value: "∞", label: "Number of times I'd still choose you", isInfinity: true },
+  { value: "1000+", label: "Times you have crossed my mind", animate: 1000 },
 ]
 
 function useCountUp(target: number, duration = 1800, start: boolean) {

@@ -1,23 +1,23 @@
 const milestones = [
   {
-    date: "The Beginning",
+    date: "27th Dec",
     title: "The first hello",
-    body: "The kind of moment you only recognise later as a beginning. Small, quiet, and already mattering more than either of us realised.",
+    body: "From the day, I stand in gentle debt to snapchat, for their our first greetings pass between us.",
   },
   {
-    date: "Somewhere After",
-    title: "The night it became us",
-    body: "When the conversation stopped feeling like a conversation and started feeling like a home I didn&rsquo;t know I&rsquo;d been looking for.",
+    date: "2th Feb",
+    title: "A taste of those blessed lips",
+    body: "Thy kiss, most sovereign and wanderous fair, did enthrall both heart and soul. A sweet enhancement from which, I would never wish release.",
   },
   {
-    date: "Every Day Since",
-    title: "The soft middle",
-    body: "Small texts, long calls, kitchens with music playing, books shared with folded corners. The ordinary that turned out to be everything.",
+    date: "8th Feb",
+    title: "The day you and I became US",
+    body: "The day we officially passed the you and I and became truly one, the way two wondering soul binds as one in quite eternity.",
   },
   {
     date: "Today",
     title: "Your Birthday",
-    body: "The universe made you exactly once, and on this day &mdash; and I will be grateful for the timing for the rest of my life.",
+    body: "I hold in debt to universe for it has given me eveything I had ever wish for all in one, in you.",
   },
   {
     date: "Forever",
@@ -54,24 +54,21 @@ export function Timeline() {
             return (
               <li
                 key={m.title}
-                className={`relative flex items-start gap-6 md:w-1/2 ${
-                  isLeft ? "md:self-start md:pr-12" : "md:self-end md:pl-12"
-                }`}
+                className={`relative flex items-start gap-6 md:w-1/2 ${isLeft ? "md:self-start md:pr-12" : "md:self-end md:pl-12"
+                  }`}
               >
                 {/* dot */}
                 <span
                   aria-hidden="true"
-                  className={`relative z-10 mt-2 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-rose/60 bg-cream md:absolute md:top-2 md:mt-0 ${
-                    isLeft ? "md:-right-4" : "md:-left-4"
-                  }`}
+                  className={`relative z-10 mt-2 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-rose/60 bg-cream md:absolute md:top-2 md:mt-0 ${isLeft ? "md:-right-4" : "md:-left-4"
+                    }`}
                 >
                   <span className="h-2 w-2 rounded-full bg-rose shadow-[0_0_14px_2px_oklch(0.65_0.15_15_/_0.55)]" />
                 </span>
 
                 <div
-                  className={`flex-1 rounded-2xl border border-rose/20 bg-card/70 p-6 backdrop-blur-sm md:p-8 ${
-                    isLeft ? "md:text-right" : "md:text-left"
-                  }`}
+                  className={`flex-1 rounded-2xl border border-rose/20 bg-card/70 p-6 backdrop-blur-sm md:p-8 ${isLeft ? "md:text-right" : "md:text-left"
+                    }`}
                 >
                   <span className="font-serif text-xs uppercase tracking-[0.3em] text-rose/80">
                     {m.date}
